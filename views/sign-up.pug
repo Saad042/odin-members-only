@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+
+  h1 Sign up
+  form(action="" method="post")
+    label(for="first_name") first_name
+    input(id="first_name" name="first_name" type="text" autocomplete="first_name", required)
+    label(for="new-password") Password
+    input(id="new-password" name="password" type="password" autocomplete="new-password", required)
+    button(type="submit") Sign up
